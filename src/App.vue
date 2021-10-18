@@ -1,18 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div id="head">
+      <img alt="Blackjack logo" src="./assets/logo.png">
+      <h1>Blackjack</h1>
+    </div>
+
+    <hello-jack/>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
+import HelloJack from "./components/HelloJack";
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: {HelloJack},
 }
 </script>
 
@@ -23,6 +26,17 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 5%;
+}
+</style>
+<style scoped>
+#head img {
+  width: 128px;
+  vertical-align: middle;
+}
+#head h1 {
+  font-size: 2em;
+  margin-left: 13px;
+  display:inline-block;
 }
 </style>
