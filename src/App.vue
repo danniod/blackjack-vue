@@ -12,10 +12,8 @@
 
 <script>
 
-import HelloJack from "./components/HelloJack";
 export default {
   name: 'App',
-  components: {HelloJack},
 }
 </script>
 

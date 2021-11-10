@@ -2,8 +2,8 @@
   <div>
     <desk v-bind:cards="cards"/>
     <div id="rule">
-      <p>21点游戏：A在总分不超过21时作11，总分超过21则作1；J、Q、K作为10。</p>
-      <p>在总分不超过21点的情况尽量大吧</p>
+      <p>21点游戏：A在可作为11或1；J、Q、K作为10。</p>
+      <p>拼尽运气抽出21点吧！爆牌可是会输的哟</p>
     </div>
     <div id="player">
       <button>开牌</button>
@@ -13,11 +13,9 @@
 
 
 <script>
-import Desk from "./Desk";
 
 export default {
   name: 'HelloJack',
-  components: {Desk},
   data() {
     return {
       cards: ['B1', 'AB'],

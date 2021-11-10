@@ -1,7 +1,7 @@
 <template>
   <div id="desk" >
     <div id="card" v-for="(card, index) in cards" :key="index">
-      <img :src="require(`../assets/cards/${card}.bmp`)" alt="card">
+      <img :src="require(`../../assets/cards/${card}.bmp`)" alt="card">
     </div>
 
  </div>
