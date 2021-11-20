@@ -6,7 +6,7 @@
       <p>拼尽运气抽出21点吧！爆牌可是会输的哟</p>
     </div>
     <div id="player">
-      <button>开牌</button>
+      <vs-button size="large" block @click="login">登 录</vs-button>
     </div>
   </div>
 </template>
@@ -21,7 +21,13 @@ export default {
       cards: ['B1', 'AB'],
     }
   },
-  methods() {
+  mounted() {
+    this.$login.dialog = true
+  },
+  methods: {
+    login() {
+      this.$login.open();
+    }
 
   }
 }
@@ -44,5 +50,9 @@ li {
 
 a {
   color: #42b983;
+}
+
+center {
+  display: flex;
 }
 </style>

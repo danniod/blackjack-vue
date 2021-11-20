@@ -8,5 +8,13 @@ module.exports = {
            .use('url-loader')
            .loader('url-loader')
            .end()
+  },
+  devServer: {
+    proxy: {
+      'api': {
+        target: 'http://127.0.0.1:8022/',
+        changeOrigin: true
+      }
+    }
   }
 }
